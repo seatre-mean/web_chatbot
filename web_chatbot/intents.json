@@ -1,0 +1,259 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hey", "Hello", "Good morning", "Good evening", "Good afternoon",
+        "Is anyone there?", "Hey there", "Whats up", "Yo", "Hiya", "Howdy"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! Ask me anything."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "How are you", "How are you doing", "How's it going", "How is it going",
+        "Are you okay", "How do you feel", "What's up with you"
+      ],
+      "responses": [
+        "I'm doing well, thanks for asking! How can I help you today?",
+        "I'm just a program, but I'm running smoothly! What do you need?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "See you later", "Goodbye", "I am leaving", "Have a nice day",
+        "Talk to you later", "Quit", "Exit", "See ya", "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you later, take care!",
+        "Bye! Come back anytime."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "That's helpful", "Thanks a lot",
+        "Awesome, thanks", "Thank you so much", "Appreciate it", "Great, thanks"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name?", "Who are you?", "What should I call you?",
+        "Tell me your name", "Do you have a name"
+      ],
+      "responses": [
+        "I'm ChatBot, a simple NLP-based assistant built with NLTK.",
+        "You can call me ChatBot!"
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "Who created you?", "Who made you?", "Who built you?", "Who is your developer?",
+        "Who programmed you"
+      ],
+      "responses": [
+        "I was built as a Python NLP project using NLTK and scikit-learn.",
+        "A developer learning NLP built me as a chatbot project!"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "How old are you", "What is your age", "When were you created", "When were you born"
+      ],
+      "responses": [
+        "I don't have an age in the human sense — I was just built as a software project!",
+        "I'm timeless, I don't age. I'm just code!"
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "What can you do?", "What do you do?", "Help", "I need help",
+        "Can you help me?", "What can you help with", "What are your features",
+        "What kind of questions can you answer"
+      ],
+      "responses": [
+        "I can do simple math, unit conversions, tell you the date/time, answer some general knowledge questions, and chat about common topics. Try asking me something!",
+        "Ask me to calculate something, convert units, tell a joke, or ask general questions — I'll do my best!"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "Tell me a joke", "Say something funny", "Make me laugh", "Got any jokes",
+        "Tell me something funny"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "I told my computer I needed a break, and it said 'No problem, I'll go to sleep.'",
+        "Why was the math book sad? Because it had too many problems."
+      ]
+    },
+    {
+      "tag": "mood_positive",
+      "patterns": [
+        "I am happy", "I am feeling good", "I am great", "Today is a good day",
+        "I am excited", "Feeling awesome"
+      ],
+      "responses": [
+        "That's wonderful to hear! What's making you happy today?",
+        "Glad to hear it! Keep that energy going."
+      ]
+    },
+    {
+      "tag": "mood_negative",
+      "patterns": [
+        "I am sad", "I am feeling down", "I am tired", "I am stressed",
+        "Today is a bad day", "I am bored", "I am upset"
+      ],
+      "responses": [
+        "I'm sorry to hear that. I hope things get better soon.",
+        "That sounds tough. Sometimes a short break helps — is there something specific on your mind?"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What is the weather like?", "Will it rain today?", "Is it sunny outside?",
+        "Tell me the weather", "What's the temperature outside"
+      ],
+      "responses": [
+        "I don't have live weather access, but you could check a weather app or site for current conditions.",
+        "I can't check live weather right now, sorry!"
+      ]
+    },
+    {
+      "tag": "ai_general",
+      "patterns": [
+        "What is artificial intelligence", "What is AI", "What is machine learning",
+        "What is NLP", "What is natural language processing", "What is deep learning",
+        "What is a chatbot"
+      ],
+      "responses": [
+        "Artificial Intelligence (AI) is the field of building computer systems that can perform tasks normally requiring human intelligence, like understanding language, recognizing images, or making decisions.",
+        "Machine learning is a branch of AI where systems learn patterns from data rather than being explicitly programmed for every rule.",
+        "Natural Language Processing (NLP) is the field of AI focused on helping computers understand, interpret, and generate human language.",
+        "A chatbot is a program designed to simulate conversation with users, often using NLP to understand and respond to text input."
+      ]
+    },
+    {
+      "tag": "python_general",
+      "patterns": [
+        "What is python", "What is a programming language", "Is python easy to learn",
+        "What is python used for"
+      ],
+      "responses": [
+        "Python is a popular, beginner-friendly programming language known for its readable syntax. It's widely used in web development, data science, automation, and AI."
+      ]
+    },
+    {
+      "tag": "small_talk_compliment",
+      "patterns": [
+        "You are smart", "You are helpful", "Good job", "Well done", "Nice work",
+        "You are cool", "I like you"
+      ],
+      "responses": [
+        "Thank you, that's kind of you to say!",
+        "I appreciate that! Let me know if there's anything else I can help with."
+      ]
+    },
+    {
+      "tag": "small_talk_insult",
+      "patterns": [
+        "You are dumb", "You are useless", "You are stupid", "You are bad",
+        "This is not helpful"
+      ],
+      "responses": [
+        "I'm sorry I couldn't help this time. Could you tell me more about what you need?",
+        "Sorry about that — I'm still learning. Want to try rephrasing your question?"
+      ]
+    },
+    {
+      "tag": "favorite_color",
+      "patterns": [
+        "What is your favorite color", "Do you have a favorite color"
+      ],
+      "responses": [
+        "I don't see colors, but if I had to pick, I'd say blue — calm and classic!"
+      ]
+    },
+    {
+      "tag": "favorite_food",
+      "patterns": [
+        "What is your favorite food", "Do you eat food", "Do you like pizza"
+      ],
+      "responses": [
+        "I don't eat, but I hear pizza is a popular favorite among humans!"
+      ]
+    },
+    {
+      "tag": "real_or_human",
+      "patterns": [
+        "Are you human", "Are you a real person", "Are you alive", "Are you a robot",
+        "Are you a bot"
+      ],
+      "responses": [
+        "I'm a chatbot — a computer program, not a human.",
+        "Nope, I'm an AI program, not a real person!"
+      ]
+    },
+    {
+      "tag": "love"
+      ,
+      "patterns": [
+        "I love you", "Do you love me", "Will you marry me"
+      ],
+      "responses": [
+        "That's sweet, but I'm just a program! I'm here to help answer your questions though."
+      ]
+    },
+    {
+      "tag": "fun_fact",
+      "patterns": [
+        "Tell me a fact", "Tell me something interesting", "Give me a fun fact",
+        "Surprise me"
+      ],
+      "responses": [
+        "Here's one: honey never spoils — archaeologists have found 3000-year-old honey in Egyptian tombs that's still edible!",
+        "Fun fact: Octopuses have three hearts and blue blood.",
+        "Did you know? A day on Venus is longer than a year on Venus."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact you?", "What is your email?", "What is your phone number?",
+        "How do I reach support?", "Contact information"
+      ],
+      "responses": [
+        "You can reach us at support@example.com or call +1-800-555-0199.",
+        "Email support@example.com for any queries."
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "What are your hours?", "When are you open?", "What time do you open?",
+        "What time do you close?", "Are you open now?"
+      ],
+      "responses": [
+        "We are open from 9 AM to 6 PM, Monday to Saturday.",
+        "Our working hours are 9 AM - 6 PM, Mon-Sat."
+      ]
+    }
+  ]
+}
