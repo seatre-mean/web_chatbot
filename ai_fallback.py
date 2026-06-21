@@ -10,9 +10,9 @@ that a small hand-built knowledge base never could.
 Setup required:
     1. Get an API key from https://console.anthropic.com/
     2. Set it as an environment variable before running the server:
-         Windows (cmd):   set ANTHROPIC_API_KEY=sk-ant-xxxxxxxx
-         Windows (PS):    $env:ANTHROPIC_API_KEY="sk-ant-xxxxxxxx"
-         Mac/Linux:       export ANTHROPIC_API_KEY=sk-ant-xxxxxxxx
+         Windows (cmd):   set ANTHROPIC_API_KEY=472f8e5c-3ba9-4876-bfee-f9e670866b53
+         Windows (PS):    $env:ANTHROPIC_API_KEY="472f8e5c-3ba9-4876-bfee-f9e670866b53"
+         Mac/Linux:       export ANTHROPIC_API_KEY=472f8e5c-3ba9-4876-bfee-f9e670866b53
        OR just edit API_KEY below directly (not recommended for shared code).
 
 If no key is configured, this module fails gracefully and the chatbot
@@ -24,8 +24,8 @@ import json
 import urllib.request
 import urllib.error
 
-API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")  # or hardcode your key here as a string
-API_URL = "https://api.anthropic.com/v1/messages"
+API_KEY = os.environ.get("ANTHROPIC_API_KEY", "472f8e5c-3ba9-4876-bfee-f9e670866b53")  # or hardcode your key here as a string
+API_URL = "https://sambanova.ai/apis"
 MODEL = "claude-sonnet-4-6"
 
 SYSTEM_PROMPT = (
