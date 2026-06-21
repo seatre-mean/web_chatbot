@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dual-Engine Chatbot</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="mark">⌗</div>
+      <div class="title-block">
+        <h1>Dual-Engine Chat</h1>
+        <p class="subtitle">NLTK retrieval engine <span class="dot">+</span> AI fallback</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="ai-status {{ 'on' if ai_configured else 'off' }}" id="aiStatus">
+        <span class="status-dot"></span>
+        <span class="status-text">{{ 'AI fallback online' if ai_configured else 'AI fallback not configured' }}</span>
+      </div>
+      <button class="reset-btn" id="resetBtn" title="Clear conversation">Reset</button>
+    </div>
+  </header>
+
+  <main class="chat-shell">
+    <div class="chat-log" id="chatLog">
+      <div class="msg bot">
+        <div class="bubble">
+          <p>Hi! I'm a two-layer chatbot. Try a math question, a unit conversion, or small talk — I'll answer those instantly using NLTK + TF-IDF matching. Ask me something open-ended, and I'll hand it to an AI model instead.</p>
+        </div>
+        <div class="badge-row"><span class="badge instant">⚡ instant</span></div>
+      </div>
+    </div>
+
+    <form class="composer" id="composer" autocomplete="off">
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Ask anything — try '12 * 7' or 'explain black holes'"
+        autocomplete="off"
+      />
+      <button type="submit" id="sendBtn">
+        <span class="send-label">Send</span>
+        <svg class="send-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M2 8H14M14 8L9 3M14 8L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+
+    <div class="hint-row">
+      <span class="hint-label">Try:</span>
+      <button class="chip" data-text="What is 144 / 12?">144 / 12?</button>
+      <button class="chip" data-text="Convert 10 km to miles">10 km → miles</button>
+      <button class="chip" data-text="What is the capital of Japan?">Capital of Japan</button>
+      <button class="chip" data-text="Explain how black holes form">Explain black holes</button>
+    </div>
+  </main>
+
+  <footer class="footer-note">
+    <span class="engine-key">
+      <span class="badge instant">⚡ instant</span> = local NLTK/TF-IDF match &nbsp;·&nbsp;
+      <span class="badge ai">🧠 ai</span> = Claude API fallback
+    </span>
+  </footer>
+
+</div>
+
+<script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
